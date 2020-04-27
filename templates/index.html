@@ -1,0 +1,530 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+	<title>Murat Optik</title>
+
+	<!-- Google font -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CVarela+Round" rel="stylesheet">
+
+	<!-- Bootstrap -->
+	<link type="text/css" rel="stylesheet" href="{% static 'homepage/css/bootstrap.min.css'%}" />
+
+	<!-- Owl Carousel -->
+	<link type="text/css" rel="stylesheet" href="{% static 'homepage/css/owl.carousel.css' %}" />
+	<link type="text/css" rel="stylesheet" href="{% static 'homepage/css/owl.theme.default.css' %}" />
+
+	<!-- Magnific Popup -->
+	<link type="text/css" rel="stylesheet" href="{% static 'homepage/css/magnific-popup.css' %}" />
+
+	<!-- Font Awesome Icon -->
+	<link rel="stylesheet" href="{% static 'homepage/css/font-awesome.min.css' %}">
+
+	<!-- Custom stlylesheet -->
+	<link type="text/css" rel="stylesheet" href="{% static 'homepage/css/style.css' %}" />
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+	<!-- Header -->
+	<header id="home">
+		<!-- Background Image -->
+		<div class="bg-img" style="background-image: url({% static 'homepage/img/background1.jpg' %});">
+			<div class="overlay"></div>
+		</div>
+		<!-- /Background Image -->
+
+		<!-- Nav -->
+		<nav id="nav" class="navbar nav-transparent">
+			<div class="container">
+
+				<div class="navbar-header">
+					<!-- Logo -->
+					<div class="navbar-brand">
+						<a href="{% url 'index' %}">
+							<img class="logo" src="{% static 'homepage/img/a.png' %}" alt="logo">
+							<img class="logo-alt" src="{% static 'homepage/img/as.png' %}" alt="logo">
+						</a>
+					</div>
+					<!-- /Logo -->
+
+					<!-- Collapse nav button -->
+					<div class="nav-collapse">
+						<span></span>
+					</div>
+					<!-- /Collapse nav button -->
+				</div>
+				<!--  Main navigation  -->
+				<ul class="main-nav nav navbar-nav navbar-right">
+					<li><a href="#home">Ana Sayfa</a></li>
+					<li><a href="#service">Hizmetlerimiz</a></li>
+					<li><a href="#pricing">Ücretler</a></li>
+					<li><a href="#contact">Bize Ulaşın</a></li>
+                    <li><a href="{% url 'login' %}">Giriş Yapın</a></li>
+				</ul>
+				<!-- /Main navigation -->
+			</div>
+		</nav>
+		<!-- /Nav -->
+
+		<!-- home wrapper -->
+		<div class="home-wrapper">
+			<div class="container">
+				<div class="row">
+
+					<!-- home content -->
+					<div class="col-md-10 col-md-offset-1">
+						<div class="home-content">
+							<h1 class="white-text">İşlerinizi Kolay Takip Edin</h1>
+							<p class="white-text">Sadece Murat Optik sistemine kaydolarak bütün müşterilerinizin bilgilerini, gelir giderinizi ve müşteri ilişkilerinizi yenilikçi tasarımımızla kontrol altına alın işinizi şansa bırakmayın.
+							</p>
+                            <form id ="info">
+							<button class="white-btn">Hemen Kaydolun!</button>
+                            <button type="submit" formaction="#service" class="main-btn">Daha fazla bilgi alın</button>
+                            </form>
+						</div>
+					</div>
+					<!-- /home content -->
+
+				</div>
+			</div>
+		</div>
+		<!-- /home wrapper -->
+
+	</header>
+	<!-- /Header -->
+
+
+
+	<!-- Service -->
+	<div id="service" class="section md-padding">
+
+		<!-- Container -->
+		<div class="container">
+
+			<!-- Row -->
+			<div class="row">
+
+				<!-- Section header -->
+				<div class="section-header text-center">
+					<h2 class="title">Sunduğumuz Hizmetler</h2>
+				</div>
+				<!-- /Section header -->
+
+				<!-- service -->
+				<div class="col-md-4 col-sm-6">
+					<div class="service">
+						<i class="fa fa-diamond"></i>
+						<h3>Modern Tasarım</h3>
+						<p>Çağdaş bir tasarımımızla her kaydınız düzenli tutulacak ve grafiklerle işinizi göreceksiniz</p>
+					</div>
+				</div>
+				<!-- /service -->
+
+				<!-- service -->
+				<div class="col-md-4 col-sm-6">
+					<div class="service">
+						<i class="fa fa-rocket"></i>
+						<h3>Kullanım Kolaylığı</h3>
+						<p>Karmaşık butonlar ve dağınık düzenden uzak bir kullanım ile her şey elinizin altında</p>
+					</div>
+				</div>
+				<!-- /service -->
+
+				<!-- service -->
+				<div class="col-md-4 col-sm-6">
+					<div class="service">
+						<i class="fa fa-cogs"></i>
+						<h3>İnternetten Erişim</h3>
+						<p>İnternete erişiminiz olan her yerden işlerinize ve müşterilerinize ulaşabilirsiniz</p>
+					</div>
+				</div>
+				<!-- /service -->
+
+				<!-- service -->
+				<div class="col-md-4 col-sm-6">
+					<div class="service">
+						<i class="fa fa-diamond"></i>
+						<h3>Hızlı Çözüm</h3>
+						<p>Bütün verilerinizi anında görmenize imkan sağlayacak veritaban düzenleri</p>
+					</div>
+				</div>
+				<!-- /service -->
+
+				<!-- service -->
+				<div class="col-md-4 col-sm-6">
+					<div class="service">
+						<i class="fa fa-pencil"></i>
+						<h3>Müşteri Hizmeti</h3>
+						<p>7/24 yaşayabileceğiniz her sorunda yardımınıza yetişecek uzmanlar ile sorun çözümü</p>
+					</div>
+				</div>
+				<!-- /service -->
+
+				<!-- service -->
+				<div class="col-md-4 col-sm-6">
+					<div class="service">
+						<i class="fa fa-flask"></i>
+						<h3>Medula ve ÜTS Kolaylığı</h3>
+						<p>Optisyenlerin kullandığı programlarda erişim kolaylığı sağlama</p>
+					</div>
+				</div>
+				<!-- /service -->
+
+			</div>
+			<!-- /Row -->
+
+		</div>
+		<!-- /Container -->
+
+	</div>
+	<!-- /Service -->
+<div id="testimonial" class="section md-padding">
+
+		<!-- Background Image -->
+		<div class="bg-img" style="background-image: url({% static 'homepage/img/background2.jpg' %});">
+			<div class="overlay"></div>
+		</div>
+		<!-- /Background Image -->
+
+    </div>
+
+
+
+	<!-- Why Choose Us -->
+	<div id="features" class="section md-padding bg-grey">
+
+		<!-- Container -->
+		<div class="container">
+
+			<!-- Row -->
+			<div class="row">
+
+				<!-- why choose us content -->
+				<div class="col-md-6">
+					<div class="section-header">
+						<h2 class="title">Neden Bizi Tercih Etmelisiniz</h2>
+					</div>
+					<p>40 yılı aşkın süredir optik işinin içinde olan ailemizin gelişen dünyada yeni teknolojilerden faydalanmanızı sağlayacağımıza eminiz</p>
+					<div class="feature">
+						<i class="fa fa-check"></i>
+						<p>Optik camiasının içinden olduğumuz için ihtiyaçlarınızı biliyoruz</p>
+					</div>
+					<div class="feature">
+						<i class="fa fa-check"></i>
+						<p>Kullanıcılarımızın önerilerini ve şikayetlerini hemen çözüyoruz</p>
+					</div>
+					<div class="feature">
+						<i class="fa fa-check"></i>
+						<p>Uygulamamızı sürekli güncelliyor ve daha da iyileştiriyoruz</p>
+					</div>
+					<div class="feature">
+						<i class="fa fa-check"></i>
+						<p>Yeni düzenlemeleri ve gelişmeleri yakından takip ediyoruz</p>
+					</div>
+				</div>
+				<!-- /why choose us content -->
+
+				<!-- About slider -->
+				<div class="col-md-6">
+					<div id="about-slider" class="owl-carousel owl-theme">
+						<img class="img-responsive" src="{% static 'homepage/img/about1.jpg' %}" alt="">
+						<img class="img-responsive" src="{% static 'homepage/img/about2.jpg' %}" alt="">
+						<img class="img-responsive" src="{% static 'homepage/img/about1.jpg' %}" alt="">
+						<img class="img-responsive" src="{% static 'homepage/img/about2.jpg' %}" alt="">
+					</div>
+				</div>
+				<!-- /About slider -->
+
+			</div>
+			<!-- /Row -->
+
+		</div>
+		<!-- /Container -->
+
+	</div>
+	<!-- /Why Choose Us -->
+
+	<!-- Pricing -->
+	<div id="pricing" class="section md-padding">
+
+		<!-- Container -->
+		<div class="container">
+
+			<!-- Row -->
+			<div class="row">
+
+				<!-- Section header -->
+				<div class="section-header text-center">
+					<h2 class="title">Ücretler</h2>
+				</div>
+				<!-- /Section header -->
+
+				<!-- pricing -->
+				<div class="col-sm-4">
+					<div class="pricing">
+						<div class="price-head">
+							<span class="price-title">Optik Planı</span>
+							<div class="price">
+								<h3>5₺<span class="duration">/ aylık</span></h3>
+							</div>
+						</div>
+						<ul class="price-content">
+							<li>
+								<p>Müşteri kaydı</p>
+							</li>
+							<li>
+								<p>Stok kaydı</p>
+							</li>
+							<li>
+								<p>Alışlar</p>
+							</li>
+                            <li>
+								<p>Satışlar</p>
+							</li>
+						</ul>
+						<div class="price-btn">
+							<button class="outline-btn">Şimdi Satın Al</button>
+						</div>
+					</div>
+				</div>
+				<!-- /pricing -->
+
+				<!-- pricing -->
+				<div class="col-sm-4">
+					<div class="pricing">
+						<div class="price-head">
+							<span class="price-title">Optik PremIum</span>
+							<div class="price">
+								<h3>15₺<span class="duration">/ aylık</span></h3>
+							</div>
+						</div>
+						<ul class="price-content">
+							<li>
+								<p>Çoklu kullanıcı desteği</p>
+							</li>
+							<li>
+								<p>Mobil uygulama</p>
+							</li>
+							<li>
+								<p>SMS entergasyonu</p>
+							</li>
+                            <li>
+								<p>ÜTS toplu alım fonksiyonu</p>
+							</li>
+						</ul>
+						<div class="price-btn">
+							<button class="outline-btn">Şimdi Satın Al</button>
+						</div>
+					</div>
+				</div>
+				<!-- /pricing -->
+
+				<!-- pricing -->
+				<div class="col-sm-4">
+					<div class="pricing">
+						<div class="price-head">
+							<span class="price-title">Optik ExclusIve</span>
+							<div class="price">
+								<h3>35₺<span class="duration">/ aylık</span></h3>
+							</div>
+						</div>
+						<ul class="price-content">
+							<li>
+								<p>Size özel website yapımı</p>
+							</li>
+							<li>
+								<p>E-ticaret websitesi kurulması</p>
+							</li>
+							<li>
+								<p>Mobil hak sorgulama</p>
+							</li>
+                            <li>
+								<p>Hastane ve doktor takibi</p>
+							</li>
+						</ul>
+						<div class="price-btn">
+							<button class="outline-btn">Şimdi Satın Al</button>
+						</div>
+					</div>
+				</div>
+				<!-- /pricing -->
+
+			</div>
+			<!-- Row -->
+
+		</div>
+		<!-- /Container -->
+
+	</div>
+	<!-- /Pricing -->
+
+
+	<!-- Testimonial -->
+	<div id="testimonial" class="section md-padding">
+
+		<!-- Background Image -->
+		<div class="bg-img" style="background-image: url({% static 'homepage/img/background3.jpg' %});">
+			<div class="overlay"></div>
+		</div>
+		<!-- /Background Image -->
+
+		<!-- Container -->
+		<div class="container">
+
+			<!-- Row -->
+			<div class="row">
+            </div>
+        </div>
+    </div>
+
+	<!-- Contact -->
+	<div id="contact" class="section md-padding">
+
+		<!-- Container -->
+		<div class="container">
+
+			<!-- Row -->
+			<div class="row">
+
+				<!-- Section-header -->
+				<div class="section-header text-center">
+					<h2 class="title">Bize Ulaşın</h2>
+				</div>
+				<!-- /Section-header -->
+
+				<!-- contact -->
+				<div class="col-sm-4">
+					<div class="contact">
+						<i class="fa fa-phone"></i>
+						<h3>Telefon</h3>
+						<p>0 224 224 34 84</p>
+					</div>
+				</div>
+				<!-- /contact -->
+
+				<!-- contact -->
+				<div class="col-sm-4">
+					<div class="contact">
+						<i class="fa fa-envelope"></i>
+						<h3>E-Posta</h3>
+						<p>info@muratoptik.net</p>
+					</div>
+				</div>
+				<!-- /contact -->
+
+				<!-- contact -->
+				<div class="col-sm-4">
+					<div class="contact">
+						<i class="fa fa-map-marker"></i>
+						<h3>Adres</h3>
+						<p>Alacamescit Mah. Tek Sk. 17/G Osmangazi/Bursa</p>
+					</div>
+				</div>
+				<!-- /contact -->
+
+				<!-- contact form -->
+				<div class="col-md-8 col-md-offset-2">
+					<form class="contact-form">
+						<input type="text" class="input" placeholder="İsim Soyisim">
+                        <input type="email" class="input" placeholder="Telefon">
+						<input type="email" class="input" placeholder="E-Posta">
+						<input type="text" class="input" placeholder="Konu">
+						<textarea class="input" placeholder="Mesaj"></textarea>
+						<button class="main-btn">Gönder</button>
+					</form>
+				</div>
+				<!-- /contact form -->
+
+			</div>
+			<!-- /Row -->
+
+		</div>
+		<!-- /Container -->
+
+	</div>
+	<!-- /Contact -->
+
+
+	<!-- Footer -->
+	<footer id="footer" class="sm-padding bg-dark">
+
+		<!-- Container -->
+		<div class="container">
+
+			<!-- Row -->
+			<div class="row">
+
+				<div class="col-md-12">
+
+					<!-- footer logo -->
+					<div class="footer-logo">
+						<a href="{% url 'index' %}"><img src="{% static 'homepage/img/as.png'%}" alt="logo"></a>
+					</div>
+					<!-- /footer logo -->
+
+					<!-- footer follow -->
+					<ul class="footer-follow">
+						<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+						<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+						<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+						<li><a href="#"><i class="fa fa-youtube"></i></a></li>
+					</ul>
+					<!-- /footer follow -->
+
+					<!-- footer copyright -->
+					<div class="footer-copyright">
+						<p>© 2020. Tüm hakları saklıdır.</p>
+					</div>
+					<!-- /footer copyright -->
+
+				</div>
+
+			</div>
+			<!-- /Row -->
+
+		</div>
+		<!-- /Container -->
+
+	</footer>
+	<!-- /Footer -->
+
+	<!-- Back to top -->
+	<div id="back-to-top"></div>
+	<!-- /Back to top -->
+
+	<!-- Preloader -->
+	<div id="preloader">
+		<div class="preloader">
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+	</div>
+	<!-- /Preloader -->
+
+	<!-- jQuery Plugins -->
+	<script type="text/javascript" src="{% static 'homepage/js/jquery.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'homepage/js/bootstrap.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'homepage/js/owl.carousel.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'homepage/js/jquery.magnific-popup.js' %}"></script>
+	<script type="text/javascript" src="{% static 'homepage/js/main.js' %}"></script>
+
+</body>
+
+</html>
